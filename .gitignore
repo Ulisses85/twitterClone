@@ -1,0 +1,15 @@
+// App stuff
+./public/js/bundle.js
+
+// Node.js stuff
+node_modules
+*.log
+
+// OSX stuff
+.DS_Store
+
+// WebStorm stuff
+.idea
+
+// VS Code stuff
+jsconfig.json
