@@ -42,7 +42,26 @@ const Profile = React.createClass({
         <div className = "profile-background">
           <img src={this.state.backgroundImage} />
         </div>
-        <a className="user-data"><img src={this.state.profileImage} /></a>
+        <a className="user-pic"><img src={this.state.profileImage} /></a>
+        <div className="user-info">
+          <p className ="lead">{this.state.name}</p><span className = "small"> {'@'+this.state.username}</span>
+        </div>
+        <div className="profile-stats">
+          <ul>
+              <li>
+                <span className = "stats-label">tweets</span>
+                <span className = "stats-number">{this.state.tweets}</span>
+              </li>
+              <li>
+                <span className = "stats-label">following</span>
+                <span className = "stats-number">{this.state.following}</span>
+              </li>
+              <li>
+                <span className = "stats-label">followers</span>
+                <span className = "stats-number">{this.state.followers}</span>
+              </li>
+          </ul>
+        </div>
       </div>
     );
   }

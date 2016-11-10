@@ -33,16 +33,18 @@ const App = React.createClass({
     return (
       <div>
       <Navbar />
+      <div className = "container">
         <div className ="columns">
-          <div className="column is-3">
-              <Profile />
-              <TrendsBox trends = {this.state.trends}/>
-          </div>
-          <div className="column is-6">
-              <Feed />
-          </div>
-          <div className="column is-3">
-              <WhoBox />
+            <div className="column is-3">
+                <Profile />
+                <TrendsBox trends = {this.state.trends}/>
+            </div>
+            <div className="column is-6">
+                <Feed />
+            </div>
+            <div className="column is-3">
+                <WhoBox />
+            </div>
           </div>
         </div>
       </div>
