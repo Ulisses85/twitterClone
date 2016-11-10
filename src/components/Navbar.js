@@ -3,25 +3,20 @@ const React = require('react');
 const mainMenu = ['Home', 'Moments', 'Notifications', 'Messages'];
 const Navbar = React.createClass({
 
-  menuRender: function () {
-    return (
-          mainMenu.map(function (menuItem, i) {
-            return <a className="nav-item" key={i}>{mainMenu[i]}</a>
-          })
-
-    );
-  },
 
   render: function () {
     return (
       <div className="container-fluid is-clearfix container-custom">
         <nav className="nav nav-custom has-shadow">
           <div className="nav-left nav-menu">
-              {this.menuRender()}
+          <a className="nav-item"><i className="fa fa-home icon-twt"></i>Home</a>
+          <a className="nav-item"><i className="fa fa-bolt icon-twt"></i>Moments</a>
+          <a className="nav-item"><i className="fa fa-bell icon-twt"></i>Notifications</a>
+          <a className="nav-item"><i className="fa fa-envelope icon-twt"></i>Messages</a>
           </div>
           <div className = "nav-center">
           <span className="nav-item">
-            <i className="fa fa-twitter icon-twt"></i>
+            <i className="fa fa-twitter logo"></i>
           </span>
           </div>
 

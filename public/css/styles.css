@@ -15,8 +15,18 @@ body {
 }
 .icon-twt{
   font-size:26px;
-  color:#1DA1F2;
+  margin-right: 3px;
 }
 .custom-input, .custom-item img, .custom-item a{
   margin-right:10px;
+}
+.profile-box{
+  min-height: 100px;
+}
+.feed-box{
+  min-height: 500px;
+}
+.logo{
+  color:#1DA1F2;
+font-size: 30px;
 }

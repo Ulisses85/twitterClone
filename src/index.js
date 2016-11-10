@@ -2,8 +2,10 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const TrendsBox = require('./components/TrendsBox');
 const request = require('superagent');
-const Navbar = require('./components/navbar')
-
+const Navbar = require('./components/Navbar');
+const Profile = require('./components/Profile');
+const Feed = require('./components/Feed');
+const WhoBox = require('./components/WhoBox');
 const App = React.createClass({
 
   getInitialState: function (){
@@ -31,7 +33,18 @@ const App = React.createClass({
     return (
       <div>
       <Navbar />
-        <TrendsBox trends = {this.state.trends}/>
+        <div className ="columns">
+          <div className="column is-3">
+              <Profile />
+              <TrendsBox trends = {this.state.trends}/>
+          </div>
+          <div className="column is-6">
+              <Feed />
+          </div>
+          <div className="column is-3">
+              <WhoBox />
+          </div>
+        </div>
       </div>
     );
   }
