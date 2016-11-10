@@ -14,8 +14,8 @@ body {
   overflow-x:hidden;
 }
 .icon-twt{
-  font-size:26px;
-  margin-right: 3px;
+  font-size:24px;
+  margin-right: 4px;
 }
 .custom-input, .custom-item img, .custom-item a{
   margin-right:10px;
@@ -29,4 +29,7 @@ body {
 .logo{
   color:#1DA1F2;
 font-size: 30px;
+}
+.profile-background{
+  background-size:cover;
 }
