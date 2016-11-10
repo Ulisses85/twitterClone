@@ -3,6 +3,7 @@ const React = require('react');
 const TrendsBox = React.createClass({
   render: function () {
     return (
+      <div className="container is-clearfix">
       <div className="box">
         <h2 className="title is-1">Trend Box</h2>
         <ul className="trendList">
@@ -14,6 +15,7 @@ const TrendsBox = React.createClass({
           }
         </ul>
       </div>
+    </div>
     );
   }
 });

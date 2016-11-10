@@ -5,3 +5,18 @@ body {
 .panel {
     padding: 1%;
 }
+.container-custom{
+  margin-bottom:20px;
+}
+
+#app{
+  width:100%;
+  overflow-x:hidden;
+}
+.icon-twt{
+  font-size:26px;
+  color:#1DA1F2;
+}
+.custom-input, .custom-item img, .custom-item a{
+  margin-right:10px;
+}
