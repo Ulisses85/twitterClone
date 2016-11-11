@@ -92,6 +92,21 @@ a.custom-nav-item:hover{
   border-bottom: 5px solid #1b95e0;
   padding-bottom:5px;
 }
+
+/* ---- trends ---- */
+.trends{
+color: #66757f;
+font-size: 18px;
+font-weight: 300;
+}
+.trendList li{
+  padding: 5px 0;
+
+}
+.trendList li a {
+  color:#0084B4;
+  font-weight: 550;
+}
 /* ---- FEED STYLES --- */
 
 

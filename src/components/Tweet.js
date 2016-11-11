@@ -26,11 +26,13 @@ const Tweet = React.createClass({
               handle: handle,
               text: tweet.text,
               userInfo: tweet.user,
-              tweetCount:tweet.tweet_count,
-              favoriteCount: tweet.favorite_count
+              tweetCount:tweet.retweet_count,
+              favoriteCount: tweet.favorite_count,
+              tweetDate: tweet.created_at
             })
           })
         });
+        console.log(tweets);
         that.setState({
           tweets: tweets
         })
@@ -43,10 +45,16 @@ const Tweet = React.createClass({
     if (!this.state.tweets) {
       return <p>Loading...</p>
     }
+    var sortedArray = this.state.tweets.sort(function (a, b) {
+       return new Date(a.tweetDate) - new Date(b.tweetDate)
+       console.log(sortedArray);
+    });
     return(
       <div>
       {
-        this.state.tweets.map(function (tweet) {
+
+        sortedArray.map(function (tweet) {
+
           return (
           <div className = "clearfix">
             <div className = "profile-pic">
@@ -69,7 +77,7 @@ const Tweet = React.createClass({
             </div>
             </div>
           </div>
-          )
+        )
 
         })
       }

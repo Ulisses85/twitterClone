@@ -5,7 +5,7 @@ const TrendsBox = React.createClass({
     return (
       <div className="container is-clearfix">
       <div className="box">
-        <h2 className="title is-1">Trend Box</h2>
+        <p className="trends">Worldwide trends</p>
         <ul className="trendList">
           {this.props.trends.slice(0,10).map(function(trend, i) {
             return (
