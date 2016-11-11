@@ -27,7 +27,7 @@ const App = React.createClass({
     this.setState({
         trends:response.body.tweetData.trends[0].trends
     });
-      console.log(response.body.tweetData.trends[0].trends);
+
     }.bind(this));
 
   },

@@ -85,9 +85,45 @@ span.small{
   text-align:left;
 }
 a.custom-nav-item{
-  transition:all .15s ease-in-out;
+  border-bottom: 0;
+  transition:border-bottom .15s ease-in-out;
 }
 a.custom-nav-item:hover{
-  color: #1DA1F2;
   border-bottom: 5px solid #1b95e0;
+  padding-bottom:5px;
+}
+/* ---- FEED STYLES --- */
+
+
+.profile-pic{
+  float:left;
+  padding:5px;
+  width:10%
+}
+.tweet-box{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  float:left;
+  width:90%
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  height:0;
+  clear:both;
+}
+
+.tweet-share-list li{
+  display: inline-block;
+  list-style:none;
+  padding: 5px 30px;
+  vertical-align:center;
+}
+.tweet-footer {
+  padding-top:10px;
+}
+.tweet-share-list li>span{
+  margin-left:10px;
+  position:relative;
+  top:-3px;
 }

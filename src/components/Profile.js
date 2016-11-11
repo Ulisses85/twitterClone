@@ -30,7 +30,6 @@ const Profile = React.createClass({
           backgroundImage: response.body.tweetData[0].user.profile_background_image_url
 
     });
-      console.log(response);
     }.bind(this));
 
   },
