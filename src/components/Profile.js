@@ -1,6 +1,5 @@
 const React = require('react');
 const request = require('superagent');
-const TWEET_FEED = require('./data');
 
 const Profile = React.createClass({
   getInitialState: function () {

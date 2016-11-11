@@ -84,3 +84,10 @@ span.small{
   color:#0084B4;
   text-align:left;
 }
+a.custom-nav-item{
+  transition:all .15s ease-in-out;
+}
+a.custom-nav-item:hover{
+  color: #1DA1F2;
+  border-bottom: 5px solid #1b95e0;
+}

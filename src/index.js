@@ -1,5 +1,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
+
+const TRENDS_URL = require('../config').TRENDS_URL;
+
 const TrendsBox = require('./components/TrendsBox');
 const request = require('superagent');
 const Navbar = require('./components/Navbar');
@@ -16,7 +19,7 @@ const App = React.createClass({
 
   componentWillMount: function () {
     request
-    .get('https://protected-oasis-31937.herokuapp.com/trends')
+    .get(TRENDS_URL)
     .end(function(error, response) {
       if(error) {
         console.log(error);
